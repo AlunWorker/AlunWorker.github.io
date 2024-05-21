@@ -27,6 +27,56 @@
     </entry>
     
     
+    
+    <entry>
+      <title>Shader学习大纲</title>
+      <link href="//shader/shader000/"/>
+      <url>//shader/shader000/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>学习Shader对于游戏程序开发有很多好处，以下是一些主要原因：</p><ol><li><strong>提高渲染效率</strong>：Shader是运行在GPU上的程序，可以高效地处理图形渲染任务，比CPU更快。</li><li><strong>定制化渲染效果</strong>：通过编写Shader，开发者可以创建独特的视觉效果，如复杂的光照模型、动态阴影、高级后处理效果等。</li><li><strong>优化性能</strong>：Shader编程可以帮助开发者优化游戏性能，通过减少CPU和GPU之间的数据传输，降低延迟。</li><li><strong>跨平台兼容性</strong>：Shader语言如GLSL和HLSL等在不同的平台和设备上具有很好的兼容性，有助于游戏的多平台发布。</li><li><strong>增强视觉效果</strong>：Shader可以创建逼真的视觉效果，提高游戏的视觉效果和玩家的沉浸感。</li><li><strong>提升专业技能</strong>：掌握Shader编程可以提升开发者的专业技能，使他们能够解决更复杂的图形问题。</li><li><strong>创新和实验</strong>：Shader提供了一个实验和创新的平台，开发者可以尝试新的技术，推动图形技术的发展。</li><li><strong>职业发展</strong>：在游戏行业，对Shader编程的需求很高，掌握这项技能可以为开发者带来更多的职业机会。</li><li><strong>理解图形管线</strong>：学习Shader有助于更深入地理解图形渲染管线的工作原理，这对于游戏开发者来说非常重要。</li><li><strong>团队协作</strong>：Shader编程通常需要与美术和设计团队紧密合作，以确保视觉效果与游戏设计相匹配。</li></ol><p>学习Shader编程不仅可以提升个人技术能力，还可以为游戏开发带来更高质量的视觉效果和更好的性能。</p><h1 id="Shader大纲"><a href="#Shader大纲" class="headerlink" title="Shader大纲"></a>Shader大纲</h1><ul><li><a href="/shader/shader101/" title="渲染管线(一)">渲染管线(一)</a></li><li><a href="/shader/shader101/" title="3D数学(二)">3D数学(二)</a> 学习中......</li></ul><h1 id="Shader学习效果网站"><a href="#Shader学习效果网站" class="headerlink" title="Shader学习效果网站"></a>Shader学习效果网站</h1><p>1.<a href="https://www.shadertoy.com/">ShaderToy</a><br>2.<a href="https://shaderslab.com/">ShadersLab</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Shader </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Shader </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>渲染管线(一)</title>
+      <link href="//shader/shader101/"/>
+      <url>//shader/shader101/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>学习Shader就离不开渲染管线，渲染管线是流水线工作的处理形式把3D元素转换到屏幕上2D图像，渲染管线大致分为4个阶段分别是:应用阶段、几何阶段、光栅化阶段、逐片元操作，游戏引擎一般还有一个比较常见的后处理阶段，最后才到输出。</p><h2 id="应用阶段"><a href="#应用阶段" class="headerlink" title="应用阶段"></a>应用阶段</h2><ul><li><strong>准备基本场景数据</strong><ul><li>场景物体数据</li><li>摄像机数据</li><li>光源及阴影数据</li><li>其他全局数据</li></ul></li><li><strong>优化(粗粒度剔除、加速算法)</strong><ul><li>视锥剔除</li><li>遮挡剔除</li><li>层级剔除</li><li>距离剔除</li><li>其他算法</li></ul></li><li><strong>设置渲染状态，准备渲染参数</strong><ul><li>绘制设置(着色器、合批方式)</li><li>绘制顺序(相对摄像机距离、材料RenderQueue、UICanvas等等)</li><li>渲染目标（FrameBuffer、RenderTexture）</li><li>渲染模式(前向渲染、延迟渲染)</li></ul></li><li><strong>调用<a href="#DrawCall">DrawCall</a>，输出<a href="#%E5%9B%BE%E5%85%83">渲染图元</a>到显存</strong><ul><li>顶点数据（位置、颜色、法线、纹理uv坐标）</li><li>其他数据（MVP变化矩阵、纹理贴图等等）</li></ul></li></ul><h2 id="几何阶段"><a href="#几何阶段" class="headerlink" title="几何阶段"></a>几何阶段</h2><ul><li><strong>顶点着色器(Vertex Shading)(可编程)</strong><ul><li>视图转变</li><li>顶点着色</li></ul></li><li><strong>投影</strong><ul><li>正交(<a href="#NDC">NDC</a>中，W等于1)</li><li>透视(<a href="#NDC">NDC</a>中，W代表与摄像机的距离,近小远大)</li></ul></li><li><strong>裁剪</strong><ul><li>视锥体裁剪(CVV)</li><li>正面或背面剔除(可配置)</li></ul></li><li><strong>屏幕映射(Screen Mapping)</strong><ul><li>视口空间坐标会被转换为屏幕坐标，这些坐标直接对应于帧缓冲区中的像素位置。</li><li>屏幕坐标的X和Y值决定了像素在屏幕上的水平和垂直位置，而Z值则用于深度缓冲区中的深度信息。</li></ul></li></ul><h2 id="光栅化阶段"><a href="#光栅化阶段" class="headerlink" title="光栅化阶段"></a>光栅化阶段</h2><ul><li><strong>三角形设置</strong><ul><li>设置直线计算边界信息</li></ul></li><li><strong>三角形遍历</strong><ul><li>遍历填充像素</li></ul></li><li><strong>其他</strong><ul><li><a href="#%E6%8A%97%E9%94%AF%E9%BD%BF">抗锯齿</a>(MSAA)</li></ul></li></ul><h2 id="逐片元操作"><a href="#逐片元操作" class="headerlink" title="逐片元操作"></a>逐片元操作</h2><ul><li><strong>片元着色(可编程)</strong><ul><li>线性插值,求像素颜色</li></ul></li><li><strong>颜色混合</strong> <ul><li>透明度测试</li><li>深度测试</li><li>模板测试</li></ul></li><li><strong>目标缓冲区</strong><ul><li>帧缓冲区FrameBuffer</li><li>渲染贴图RenderTexture</li></ul></li></ul><h2 id="后处理"><a href="#后处理" class="headerlink" title="后处理"></a>后处理</h2><ul><li><strong>Bloom</strong></li><li><strong>HDR</strong></li><li><strong>抗锯齿FXAA</strong></li><li><strong>景深(Depth of View)</strong></li><li><strong>边缘检测</strong></li><li><strong>径向模糊</strong></li></ul><h2 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a>特别说明</h2><p><strong>图元</strong>、<strong>几何图元</strong>、<strong>渲染图元</strong>三个的区别:</p><ul><li><p><strong>图元</strong>（Primitive）: 这是图形渲染中的基本单位，可以是点、线、三角形等。图元是构成更复杂图形和模型的基础⁴。</p></li><li><p><strong>几何图元</strong>（Geometry Primitive）: 这些是由图元组成的，用于描述对象的几何形状。它们是渲染管线中的输入数据，例如顶点数据、纹理坐标、顶点法线和顶点颜色等¹。</p></li><li><p><strong>渲染图元</strong>（Rendering Primitive）: 这些是在图形渲染过程中实际被处理的图元。在OpenGL中，渲染图元包括了渲染所需的几何信息，如顶点数据、线段、多边形等，并且它们对应绘图界面上可见的实体⁵。</p></li></ul><p>简单来说，图元是构建几何图元的基本元素，而渲染图元则是在渲染过程中实际被处理和转换成最终图像的元素。</p><h3 id="图元"><a href="#图元" class="headerlink" title="图元"></a>图元</h3><p><strong>图元（Primitive）</strong>是计算机图形学中的一个术语，它指的是构成计算机生成图像（Computer Graphics, CG）的基本形状或对象。图元是图形渲染过程中的最小单位，可以被视为构建更复杂场景的构建块。以下是一些常见的图元类型：</p><ul><li><strong>点（Point）</strong>：最简单的图元，由一个像素组成。</li><li><strong>线段（Line）</strong>：由两个顶点（Vertex）组成的直线。</li><li><strong>多边形（Polygon）</strong>：由多个顶点组成的封闭形状，如三角形、四边形等。</li><li><strong>曲线（Curve）</strong>：由多个点组成的连续线条，可以是贝塞尔曲线、样条曲线等。</li><li><strong>曲面（Surface）</strong>：由多个多边形组成的复杂形状，可以是平面或曲面。</li><li><strong>纹理（Texture）</strong>：虽然不是图元本身，但纹理是图元的一个重要属性，用于在图元表面添加细节和颜色。</li><li><strong>体素（Voxel）</strong>：在三维空间中的体积元素，类似于二维图像中的像素。</li></ul><h3 id="DrawCall"><a href="#DrawCall" class="headerlink" title="DrawCall"></a>DrawCall</h3><p>在计算机图形学和渲染管线中，Draw Call（绘制调用或绘制命令）是CPU向GPU发出的指令，用于告诉GPU绘制特定的几何图形或图像。一个Draw Call通常包含了一组渲染特定图像所需的全部信息。</p><h3 id="NDC"><a href="#NDC" class="headerlink" title="NDC"></a>NDC</h3><p>在计算机图形学中，NDC（Normalized Device Coordinates，归一化设备坐标）是一种坐标系统，用于在裁剪空间和屏幕空间之间进行转换。NDC坐标系的特点是其坐标值范围在-1到1之间，这使得它们非常适合用于线性变换和透视除法。</p><p>NDC中的<strong>XYZW</strong>四个分量代表：</p><ol><li><p><strong>X</strong>：代表水平方向的坐标，范围从-1到1。在NDC中，-1表示最左边的边界，1表示最右边的边界。</p></li><li><p><strong>Y</strong>：代表垂直方向的坐标，同样范围从-1到1。在NDC中，-1表示最底部的边界，1表示最顶部的边界。请注意，在不同的图形API（如OpenGL和Direct3D）中，Y轴的方向可能相反。</p></li><li><p><strong>Z</strong>：代表深度方向的坐标，也从-1到1。在NDC中，-1通常表示视图的近裁剪平面，而1表示远裁剪平面。</p></li><li><p><strong>W</strong>：这是一个额外的维度，称为齐次坐标（Homogeneous Coordinate）。它通常用于透视除法，以将三维坐标转换为二维坐标。在NDC中，W通常不等于0，因为如果W为0，那么经过透视除法后，X、Y、Z坐标将会变为未定义。</p></li></ol><p>在渲染管线的几何阶段，顶点着色器会输出NDC坐标。然后，这些坐标会经过光栅化阶段，最终转换为屏幕空间坐标，这些屏幕坐标的X和Y分量用于确定像素在帧缓冲区中的位置。</p><p>总结来说，NDC坐标系是渲染管线中一个非常关键的步骤，它允许GPU以一种标准化和高效的方式来处理屏幕映射和透视变换。</p><h3 id="片元"><a href="#片元" class="headerlink" title="片元"></a>片元</h3><p><strong>片元（Pixel）</strong> 是图像处理和计算机图形学中的一个基本概念，指的是构成数字图像的基本单元。每个片元代表图像中的一个点，它具有特定的颜色和亮度值。在数字图像中，所有的颜色和细节都是通过这些片元的组合来表示的。</p><p>以下是片元的一些关键特性：</p><ol><li><p><strong>颜色和亮度</strong>：每个片元都存储有颜色信息，通常用红、绿、蓝（RGB）三个颜色通道的值来表示，这些值决定了片元的颜色和亮度。</p></li><li><p><strong>分辨率</strong>：图像的分辨率由其宽度和高度的片元数量决定。分辨率越高，图像的细节越丰富。</p></li><li><p><strong>像素密度</strong>：像素密度（PPI，Pixels Per Inch）是指每英寸长度内包含的片元数量，它影响图像的清晰度。</p></li><li><p><strong>位深度</strong>：位深度（Bit Depth）是指每个颜色通道可以存储的位数，它决定了颜色的精度。例如，8位颜色深度可以表示256种颜色，而24位颜色深度可以表示超过1600万种颜色。</p></li><li><p><strong>图像格式</strong>：不同的图像格式，如JPEG、PNG、GIF等，决定了片元数据的存储和压缩方式。</p></li></ol><p>在计算机图形学中，片元也用于渲染过程，其中3D模型被转换成2D图像。在这个过程中，3D场景中的每个点在投影到2D平面时，都会转换成一个片元，并根据场景的光照、纹理等属性计算其颜色和亮度值。这个过程称为光栅化（Rasterization）。</p><h3 id="抗锯齿"><a href="#抗锯齿" class="headerlink" title="抗锯齿"></a>抗锯齿</h3><ol><li><strong>SSAA</strong>:渲染到一个分辨率放大n倍的buffer,对放大n倍的buffer下采样</li><li><strong>MSAA</strong>:在光栅化阶段，技术多个覆盖样本</li><li><strong>FXAA&#x2F;TXAA</strong>:后处理技术</li></ol><h3 id="最后的最后-还在学习中会持续修改更新…"><a href="#最后的最后-还在学习中会持续修改更新…" class="headerlink" title="最后的最后,还在学习中会持续修改更新…."></a>最后的最后,还在学习中会持续修改更新….</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Shader </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Shader </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
   
   
 </search>
