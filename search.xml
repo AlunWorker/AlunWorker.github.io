@@ -33,7 +33,7 @@
       <link href="//shader/shader000/"/>
       <url>//shader/shader000/</url>
       
-        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>学习Shader对于游戏程序开发有很多好处，以下是一些主要原因：</p><ol><li><strong>提高渲染效率</strong>：Shader是运行在GPU上的程序，可以高效地处理图形渲染任务，比CPU更快。</li><li><strong>定制化渲染效果</strong>：通过编写Shader，开发者可以创建独特的视觉效果，如复杂的光照模型、动态阴影、高级后处理效果等。</li><li><strong>优化性能</strong>：Shader编程可以帮助开发者优化游戏性能，通过减少CPU和GPU之间的数据传输，降低延迟。</li><li><strong>跨平台兼容性</strong>：Shader语言如GLSL和HLSL等在不同的平台和设备上具有很好的兼容性，有助于游戏的多平台发布。</li><li><strong>增强视觉效果</strong>：Shader可以创建逼真的视觉效果，提高游戏的视觉效果和玩家的沉浸感。</li><li><strong>提升专业技能</strong>：掌握Shader编程可以提升开发者的专业技能，使他们能够解决更复杂的图形问题。</li><li><strong>创新和实验</strong>：Shader提供了一个实验和创新的平台，开发者可以尝试新的技术，推动图形技术的发展。</li><li><strong>职业发展</strong>：在游戏行业，对Shader编程的需求很高，掌握这项技能可以为开发者带来更多的职业机会。</li><li><strong>理解图形管线</strong>：学习Shader有助于更深入地理解图形渲染管线的工作原理，这对于游戏开发者来说非常重要。</li><li><strong>团队协作</strong>：Shader编程通常需要与美术和设计团队紧密合作，以确保视觉效果与游戏设计相匹配。</li></ol><p>学习Shader编程不仅可以提升个人技术能力，还可以为游戏开发带来更高质量的视觉效果和更好的性能。</p><h1 id="Shader大纲"><a href="#Shader大纲" class="headerlink" title="Shader大纲"></a>Shader大纲</h1><ul><li><a href="/shader/shader101/" title="渲染管线(一)">渲染管线(一)</a></li><li><a href="/shader/shader101/" title="3D数学(二)">3D数学(二)</a> 学习中......</li></ul><h1 id="Shader学习效果网站"><a href="#Shader学习效果网站" class="headerlink" title="Shader学习效果网站"></a>Shader学习效果网站</h1><p>1.<a href="https://www.shadertoy.com/">ShaderToy</a><br>2.<a href="https://shaderslab.com/">ShadersLab</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>学习Shader对于游戏程序开发有很多好处，以下是一些主要原因：</p><ol><li><strong>提高渲染效率</strong>：Shader是运行在GPU上的程序，可以高效地处理图形渲染任务，比CPU更快。</li><li><strong>定制化渲染效果</strong>：通过编写Shader，开发者可以创建独特的视觉效果，如复杂的光照模型、动态阴影、高级后处理效果等。</li><li><strong>优化性能</strong>：Shader编程可以帮助开发者优化游戏性能，通过减少CPU和GPU之间的数据传输，降低延迟。</li><li><strong>跨平台兼容性</strong>：Shader语言如GLSL和HLSL等在不同的平台和设备上具有很好的兼容性，有助于游戏的多平台发布。</li><li><strong>增强视觉效果</strong>：Shader可以创建逼真的视觉效果，提高游戏的视觉效果和玩家的沉浸感。</li><li><strong>提升专业技能</strong>：掌握Shader编程可以提升开发者的专业技能，使他们能够解决更复杂的图形问题。</li><li><strong>创新和实验</strong>：Shader提供了一个实验和创新的平台，开发者可以尝试新的技术，推动图形技术的发展。</li><li><strong>职业发展</strong>：在游戏行业，对Shader编程的需求很高，掌握这项技能可以为开发者带来更多的职业机会。</li><li><strong>理解图形管线</strong>：学习Shader有助于更深入地理解图形渲染管线的工作原理，这对于游戏开发者来说非常重要。</li><li><strong>团队协作</strong>：Shader编程通常需要与美术和设计团队紧密合作，以确保视觉效果与游戏设计相匹配。</li></ol><p>学习Shader编程不仅可以提升个人技术能力，还可以为游戏开发带来更高质量的视觉效果和更好的性能。</p><h1 id="Shader学习大纲"><a href="#Shader学习大纲" class="headerlink" title="Shader学习大纲"></a>Shader学习大纲</h1><ul><li><a href="/shader/shader101/" title="渲染管线(一)">渲染管线(一)</a></li><li><a href="/shader/shader101/" title="3D数学(二)">3D数学(二)</a> 学习中......</li></ul><h1 id="Shader学习效果网站"><a href="#Shader学习效果网站" class="headerlink" title="Shader学习效果网站"></a>Shader学习效果网站</h1><p>1.<a href="https://www.shadertoy.com/">ShaderToy</a><br>2.<a href="https://shaderslab.com/">ShadersLab</a></p>]]></content>
       
       
       <categories>
@@ -71,6 +71,56 @@
         <tags>
             
             <tag> Shader </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ShaderGraph界面介绍</title>
+      <link href="//shadergraph/shadergraph001/"/>
+      <url>//shadergraph/shadergraph001/</url>
+      
+        <content type="html"><![CDATA[<h2 id="MasterStack主栈"><a href="#MasterStack主栈" class="headerlink" title="MasterStack主栈"></a>MasterStack主栈</h2><p>主栈是 Shader Graph 的终点，用于定义着色器的最终表面外观。Shader Graph 应始终包含一个且仅包含一个主栈。<br>主栈包含两个上下文：</p><ol><li>Vertex 顶点着色器<br>连接到 Vertex Context 中的 <a href="#">Block</a> 的任何节点都将成为最终着色器的顶点函数的一部分</li><li>Fragment 片段着色器<br>连接到 Fragment Context 中的 <a href="#">Block</a> 的任何节点都将成为最终着色器的片元（或像素）函数的一部分</li></ol><blockquote><p>注意： 如果你将任何节点连接到两个上下文，它们将被执行两次，一次在顶点函数中，然后在片元函数中再次执行。上下文不能剪切、复制或粘贴</p></blockquote><h2 id="MainPreview预览窗口"><a href="#MainPreview预览窗口" class="headerlink" title="MainPreview预览窗口"></a>MainPreview预览窗口</h2><p>Main Preview 显示活动渲染管线上的着色器的一种表示结果。它会实时更新并自动更新以显示你在 Shader Graph 中所做的任何更改。Main<br>Preview 的标题栏显示当前着色器的名称。</p><p>Main Preview 可移动到 Shader Graph 窗口中的任意位置，并将随该窗口的最近一个角自动移动。</p><ol><li>预览网格<br>可通过按住鼠标左键并拖动 Main Preview 来旋转预览网格，并可使用滚轮进行缩放。右键单击 Main Preview<br>   可以更改预览网格。在此处可以选择任何原始网格类型或选择自定义网格。</li></ol><h2 id="Blackboard属性面板"><a href="#Blackboard属性面板" class="headerlink" title="Blackboard属性面板"></a>Blackboard属性面板</h2><p>你可以使用 Blackboard 对图形中的<a href="#">属性</a>和<a href="#">关键字</a>进行定义、排序和分类。在 Blackboard 中，你还可以编辑所选 Shader Graph<br>资源或Subgraph的路径。</p><ol><li>访问 Blackboard<br>默认情况下，Blackboard是可见的，你不能将其拖出图形并丢失它。但是，你可以将其放置在 Shader Graph Window<br>   中的任何位置。它始终与最近的角保持相同的距离，即使你调整窗口大小也是如此。</li><li>向 Blackboard 添加属性和关键字<br>要创建新属性或关键字，请单击 Blackboard 标题栏上的添加 （+）<br>   按钮，然后选择一种类型。有关属性类型的完整列表，请参阅<a href="#">属性类型</a>。</li><li>编辑<strong>属性</strong>和<strong>关键字</strong><br>选择黑板或图中的属性或关键字，以在节点设置菜单中修改其设置。</li></ol><table><thead><tr><th>设置</th><th>描述</th></tr></thead><tbody><tr><td>名称</td><td>属性的显示名称。编辑器会从显示名称中剥离引号并用下划线替换。通过在黑板上双击其名称来重命名项目。</td></tr><tr><td>引用</td><td>Shader Graph 内部使用的此属性的名称。虽然编辑器默认会填充此值，但你可以修改它。要还原为原始引用名称，右键点击引用（不是输入字段）并选择上下文菜单中的重置引用。如果引用名称包含 HLSL 不支持的任何字符，编辑器会用下划线替换这些字符。</td></tr><tr><td>默认值</td><td>基于此 Shader Graph 的任何材质中此属性的默认值。例如，如果你有一个草的 Shader Graph 并公开草的颜色作为属性，你可能会将默认值设置为绿色。</td></tr><tr><td>精度</td><td>设置属性的精度模式。见<a href="#">精度模式</a>。</td></tr><tr><td>暴露</td><td>启用此设置，使属性可供你通过 C# API 编辑。默认启用。</td></tr></tbody></table><ol start="4"><li><strong>修改</strong>和<strong>选择</strong>属性和关键字<ul><li>要对 Blackboard 上列出的项目重新排序，请拖放它们。</li><li>若要删除项目，请在 Windows 上使用 Delete 键或在 macOS 上使用 Command + Backspace 键。</li><li>要选择多个项目，请在进行选择时按住 Ctrl 键。</li><li>若要取消对一个或多个项目的选择，请按住 Ctrl 键，同时单击要从选择中删除的项目。</li></ul></li><li>使用 Blackboard 类别<br>若要使着色器中的属性更易于发现，请将它们组织成类别。展开和折叠类别以使 Blackboard 更易于导航。</li><li><strong>创建</strong>、<strong>重命名</strong>、<strong>移动</strong>和<strong>删除</strong>类别<ul><li>要添加类别，请在 Blackboard 上使用 +。</li><li>若要重命名类别，请双击类别名称，或右键单击并选择“重命名”。</li><li>要在 Blackboard 中移动类别，请选择并拖动该类别。</li><li>若要删除类别，请选择该类别并按 Delete 键，或右键单击并选择“删除”。删除类别也会删除其中的属性，因此请移动要保留的属性。</li></ul></li><li><strong>添加</strong>、<strong>删除</strong>和<strong>重新排序</strong>属性和关键字<ul><li>若要将属性或关键字添加到类别，请使用折叠 （⌄） 符号展开类别，然后将属性或关键字拖放到展开的类别上。</li><li>若要删除属性或关键字，请选择该属性或关键字并按 Delete，或右键单击并选择“删除”。</li><li>要对属性或关键字重新排序，请将它们拖放到某个类别中，或将它们移动到其他类别中。</li></ul></li><li>为<strong>特定属性</strong>和<strong>关键字</strong>创建类别<br>选择多个属性或关键字，然后在 Blackboard 上使用 + 创建一个包含你选择的所有项目的类别。</li><li><strong>复制</strong>和<strong>粘贴</strong>类别，带或不带属性    <ul><li>你可以将空类别、包含所有属性的类别以及包含部分属性的类别粘贴到一个或多个图形中。要复制具有所有属性的类别，请执行以下操作：<ul><li>选择属性。</li><li>使用 Ctrl+C 复制它。</li><li>使用 Ctrl+V 将其粘贴到目标图形中。</li></ul></li><li>要复制一组特定的属性，请执行以下操作：<ul><li>选择类别。</li><li>按住 Ctrl 键。</li><li>单击不想包含的属性以将其从选定内容中删除。</li><li>使用 Ctrl+C 复制属性。</li><li>使用 Ctrl+V 将其粘贴到目标图形中。</li></ul></li></ul></li><li>在材质检查器中使用类别<br>要修改使用 Shader Graph 创建的材质，可以在材质检查器中调整特定属性或关键字值，或编辑图形本身。<ul><li>使用流式处理虚拟纹理<br><a href="https://docs.unity3d.com/Manual/svt-use-in-shader-graph.html">流式处理虚拟纹理属性</a>示例纹理图层。要在材质检查器中访问这些图层，请展开相关的“虚拟纹理”部分，并在其名称旁边加上 ⌄ 符号。你可以通过检查器添加和移除图层。</li></ul></li><li>公开属性和关键字<br>Unity 默认会暴露属性和关键字。这允许你通过脚本进行写访问，以便你可以通过 C# API 编辑它们，除了图表之外。暴露的项目在其标签上有一个绿点。在节点设置菜单中启用或禁用此功能。</li><li>创建节点<br>将属性或关键字从 Blackboard 拖动到图形中，以创建此类节点。图形中节点的设置与 Blackboard 中相关属性或关键字的设置相同。展开这些节点以使用属性值的子成员。 如果属性已公开，则属性节点名称将包含一个绿点。</li></ol><h2 id="GraphInspector"><a href="#GraphInspector" class="headerlink" title="GraphInspector"></a>GraphInspector</h2><p>Graph Inspector使你能够与 <a href="#">Shader Graph 资源</a>的任何可选<strong>图形元素</strong>和<strong>图形范围设置</strong>进行交互。你可以使用 Graph Inspector 来编辑属性和默认值。<br>打开 Shader Graph 时，Graph Inspector 默认显示“<a href="#">Graph 设置</a>”选项卡。该特定Shader Graph的图形范围设置将显示在此选项卡中。</p><ul><li>如何使用<br>选择图形中的一个节点，以在Graph Inspector中显示该节点的可用设置。该节点的可用设置显示在 Graph Inspector 的“<strong>节点设置</strong>”选项卡中。例如，如果在图形或 <a href="#Blackboard%E5%B1%9E%E6%80%A7%E9%9D%A2%E6%9D%BF">Blackboard</a> 中选择属性节点，则“节点设置”选项卡将显示可编辑的属性属性。<ul><li>当前与 Graph Inspector 配合使用的图形元素：<ul><li><a href="https://docs.unity3d.com/Manual/SL-Properties.html">属性</a></li><li><a href="https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/Keywords.html">关键字</a></li><li><a href="https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/Sub-graph.html">自定义函数节点</a></li><li><a href="https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/Sub-graph.html">Subgraph Output 节点</a></li><li><a href="https://docs.unity3d.com/cn/Packages/com.unity.shadergraph@10.5/manual/Precision-Types.html">每个节点的精度</a></li></ul></li><li>当前不适用于 Graph Inspector 的图形元素：<ul><li>边缘</li><li><a href="https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/Sticky-Notes.html">便笺</a></li><li>组</li></ul></li></ul></li><li>材质覆盖<br>通过在“图形设置”<a href="https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/surface-options.html">（Graph Settings） 中启用“允许材质覆盖”（Allow Material Override）</a> 选项，您可以通过“材质检查器”（Material Inspector） 覆盖某些图形属性</li></ul><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="标题栏"><a href="#标题栏" class="headerlink" title="标题栏"></a>标题栏</h3><p>Shader Graph 窗口顶部的标题栏包含可对图形执行的操作。</p><ul><li>Save Asset 保存图形以更新 Shader Graph 资源</li><li>Save As 打开一个文件对话框，允许用户以新名称保存 <a href="#">Shader Graph 资源</a>。</li><li>Show In Project 此时将在 Project 窗口中突出显示 <a href="#">Shader Graph 资源</a></li><li>Check Out 如果启用了版本控制，将从源代码控制提供商签出 <a href="#">Shader Graph 资源</a> 。</li><li>Color Mode 提供下拉菜单以选择图形的<a href="#">颜色模式</a>。</li><li>Blackboard 切换 <a href="#Blackboard%E5%B1%9E%E6%80%A7%E9%9D%A2%E6%9D%BF">Blackboard</a> 的可见性。</li><li>GraphInspector 切换 <a href="#GraphInspector">GraphInspector</a> 的可见性。</li><li>MainPreview 切换 <a href="#MainPreview%E9%A2%84%E8%A7%88%E7%AA%97%E5%8F%A3">MainPreview</a> 的可见性。</li></ul><h3 id="工作空间"><a href="#工作空间" class="headerlink" title="工作空间"></a>工作空间</h3><p>工作空间是创建<a href="#">节点</a>网络的地方。 要在工作空间中导航，可按住 Alt 和鼠标左键，使用滚轮进行平移和缩放。</p><p>可按住鼠标左键并拖动以使用选取框选择多个<a href="#">节点</a>。还有各种快捷键可用于改善工作流程。</p><table><thead><tr><th>热键</th><th>Windows</th><th>OSX</th><th>描述</th></tr></thead><tbody><tr><td>剪切</td><td>Ctrl + X</td><td>Command + X</td><td>将选定的<a href="#">节点</a>剪切到剪贴板</td></tr><tr><td>复制</td><td>Ctrl + C</td><td>Command + C</td><td>将选定的<a href="#">节点</a>复制到剪贴板</td></tr><tr><td>粘贴</td><td>Ctrl + V</td><td>Command + V</td><td>粘贴剪贴板中的<a href="#">节点</a></td></tr><tr><td>焦点</td><td>F</td><td>F</td><td>将工作空间聚焦在所有或选定的<a href="#">节点</a>上</td></tr><tr><td>创建节点</td><td>空格键</td><td>空格键</td><td>打开 Create Node Menu</td></tr></tbody></table><h3 id="上下文菜单"><a href="#上下文菜单" class="headerlink" title="上下文菜单"></a>上下文菜单</h3><p>在工作空间内单击右键将打开上下文菜单。请注意，右键单击工作空间中的某一项（例如<a href="#">节点</a>）将打开该项的上下文菜单，而不是工作空间。</p><table><thead><tr><th>项</th><th>描述</th></tr></thead><tbody><tr><td>创建节点</td><td>打开 Create Node Menu</td></tr><tr><td>Create</td><td>Sticky Note在图形上创建一个新的即时贴。</td></tr><tr><td>Collapse</td><td>All Previews折叠所有<a href="#">节点</a>上的预览</td></tr><tr><td>剪切</td><td>将选定的<a href="#">节点</a>剪切到剪贴板</td></tr><tr><td>复制</td><td>将选定的<a href="#">节点</a>复制到剪贴板</td></tr><tr><td>粘贴</td><td>粘贴剪贴板中的<a href="#">节点</a></td></tr><tr><td>Delete</td><td>删除选定的<a href="#">节点</a></td></tr><tr><td>Duplicate</td><td>复制选定的<a href="#">节点</a></td></tr><tr><td>Select &#x2F; Unused Nodes</td><td>从主栈选择图形中所有对最终着色器输出没有贡献的<a href="#">节点</a></td></tr><tr><td>View &#x2F; Collapse Ports</td><td>折叠所有选定<a href="#">节点</a>上未使用的端口</td></tr><tr><td>View &#x2F; Expand Ports</td><td>展开所有选定<a href="#">节点</a>上未使用的端口</td></tr><tr><td>View &#x2F; Collapse Previews</td><td>折叠所有选定<a href="#">节点</a>上的预览</td></tr><tr><td>View &#x2F; Expand Previews</td><td>展开所有选定<a href="#">节点</a>上的预览</td></tr><tr><td>Precision &#x2F; Inherit</td><td>将所有选定<a href="#">节点</a>的精度设置为 Inherit</td></tr><tr><td>Precision &#x2F; Float</td><td>将所有选定<a href="#">节点</a>的精度设置为 Float</td></tr><tr><td>Precision &#x2F; Half</td><td>将所有选定<a href="#">节点</a>的精度设置为 Half</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> ShaderGraph </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ShaderGraph </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ShaderGraph学习大纲</title>
+      <link href="//shadergraph/shadergraph000/"/>
+      <url>//shadergraph/shadergraph000/</url>
+      
+        <content type="html"><![CDATA[<h3 id="关于-Shader-Graph"><a href="#关于-Shader-Graph" class="headerlink" title="关于 Shader Graph"></a>关于 Shader Graph</h3><p>Shader Graph 能够让您直观地构建着色器。您可以在图形框架中创建并连接节点，而不必手写代码。Shader Graph 提供了能反映所作更改的即时反馈，对于不熟悉着色器创建的用户来说非常简单。</p><h1 id="ShaderGraph学习大纲"><a href="#ShaderGraph学习大纲" class="headerlink" title="ShaderGraph学习大纲"></a>ShaderGraph学习大纲</h1><ul><li><a href="/shadergraph/shadergraph001/" title="ShaderGraph界面介绍">ShaderGraph界面介绍</a></li><li>Shader Graph 节点(学习中…)</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> ShaderGraph </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ShaderGraph </tag>
             
         </tags>
       
